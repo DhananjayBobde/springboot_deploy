@@ -16,7 +16,7 @@ public class SpringbootDeployApplication {
 
 	@GetMapping
 	public String getHello(){
-		return "welcome to home";
+		return "welcome to home page";
 	}
 
 }
