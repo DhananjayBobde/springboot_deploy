@@ -3,8 +3,8 @@ node{
    def dockerImageTage = "springboot-deploy${env.BUILD_NUMBER}"
    try{
      stage('Clone Repo'){
-          git url: 'https://github.com/DhananjayBobde/springboot_deploy.git'
-          credentialsId: 'springdeploy-user'
+          git url: 'https://github.com/DhananjayBobde/springboot_deploy.git',
+          credentialsId: 'springdeploy-user',
           branch: 'main'
      }
 
